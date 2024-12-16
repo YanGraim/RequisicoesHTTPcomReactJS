@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./style.css";
 
 function App() {
   const [nutri, setNutri] = useState([]);
@@ -18,8 +19,10 @@ function App() {
     loadApi();
   }, []);
   return (
-    <div>
-      <h1>TESTE</h1>
+    <div className="container">
+      <header>
+        <strong>React Nutri</strong>
+      </header>
     </div>
   );
 }
